@@ -1,0 +1,42 @@
+.movie{
+    width: 300px;
+    height: 500px;
+    margin:auto;
+    margin-top: 20px;
+    background-color: #373b69;
+    overflow: hidden;
+    border-radius: 9px;
+    position: relative;
+}
+.movie img{
+    max-width: 100%;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+.info h3{
+    margin: 0;
+}
+.over{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    color: #373b69;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: all 0.3S ease-in-out;
+}
+.movie:hover .over{
+    transform: translateY(0%);
+}
